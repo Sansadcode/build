@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Mercy West Hospital</h1>
+    <form action="/add_doctor" method="post">
+        <label for="add doctor"> Add Doctor:</label>
+        <br>
+	</br>
+        <label for="doctor_name">Doctor Name:</label>
+        <input type="text" id="doctor_name" name="doctor_name" required><br><br>
+	<label for="doctor_speciality">Doctor speciality:</label>
+        <label for="specialty">Specialty:</label>
+        <input type="text" id="specialty" name="specialty" required><br><br>
+        <input type="submit" value="Add Doctor">
+    </form>
+</body>
+</html>

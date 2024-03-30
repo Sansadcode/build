@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Prescription</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Mercy West Hospital</h1>
+    <form action="/add_prescription" method="post">
+        <label for="Add prescription"> Add Prescription :</label>
+        <br>
+	</br>
+        <label for="patient_id">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required><br><br>
+	<label for="patient_age">Patient age:</label>
+        <input type="text" id="patient_age" name="patient_age" required><br><br>
+	<label for="patient_issue">Patient issue:</label>
+	<input type="text" id="patient_issue" name="patient_issue" required><br><br>
+	<label for="doctor_name">Assigned doctor:</label>
+	<input type="text" id="doctor_name" name="doctor_name" required><br><br>
+	<label for="prescription">prescription:</label>
+	<input type="text" id="prescription" name="prescription" required><br><br>
+
+        <input type="submit" value="Add Prescription">
+    </form>
+</body>
+</html>
